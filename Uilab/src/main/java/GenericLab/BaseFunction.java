@@ -3,6 +3,7 @@ package GenericLab;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -50,9 +51,28 @@ public class BaseFunction {
 		}
 	}
 	/**
-	 * 
+	 * method is describe for quit browser.
 	 */
 	public void browserQuite() {
 			driver.quit();
+	}
+	/**
+	 * method is describe for close browser.
+	 */
+	public void browserClose() {
+			driver.close();
+	}
+	/**
+	 * method is describe for clear the textbox and enter the value in text box.
+	 */
+	public void typeText(WebElement element,String text) {
+		element.clear();	
+		element.sendKeys(text);
+	}
+	/**
+	 * method is describe for enter the value in text box.
+	 */
+	public void click(WebElement element,String text) {
+			element.click();
 	}
 }
