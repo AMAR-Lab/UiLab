@@ -1,7 +1,7 @@
 import { browser } from "protractor";
 
 describe('TODO', () => {
-    const URL: string = "http://todomvc.com/examples/angularjs/#/";
+    const URL: string = "https://www.redbus.in/";
 
     it('should go to a valid URL', () => {
         browser.get(URL);
